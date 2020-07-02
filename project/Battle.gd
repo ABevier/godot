@@ -1,8 +1,9 @@
 extends Node
 
-onready var hp_label = $Enemy/HPLabel
+onready var enemy = $Enemy
 
 func _on_SwordButton_pressed():
 	print("Attack!")
-	hp_label.text = "15hp"
+	enemy.hp -= 4
+	
 

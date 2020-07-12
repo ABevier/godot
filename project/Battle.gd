@@ -1,7 +1,7 @@
 extends Node
 
 onready var enemy = $Enemy
-onready var sword_button = $UI/SwordButton
+onready var battle_action_buttons = $UI/BattleActionButtons
 
 func _on_SwordButton_pressed():
 	print("Attack!")
@@ -10,5 +10,5 @@ func _on_SwordButton_pressed():
 	
 func _on_Enemy_died():
 	enemy = null
-	sword_button.hide()
+	battle_action_buttons.hide()
 	pass # Replace with function body.
